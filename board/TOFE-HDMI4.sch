@@ -10,25 +10,6 @@ LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
-LIBS:special
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
 LIBS:TOFE
 LIBS:EEPROM
 LIBS:TOFE-HDMI4-cache
@@ -353,12 +334,12 @@ Wire Wire Line
 	6000 10100 6250 10100
 Wire Wire Line
 	5950 8250 5950 2800
-Wire Wire Line
-	4150 4700 3800 4700
-Wire Wire Line
-	4150 5000 3800 5000
-Text Label 3800 4700 0    60   ~ 12
+Text Label 3750 2900 0    60   ~ 12
 SCL
-Text Label 3800 5000 0    60   ~ 12
+Text Label 3750 3000 0    60   ~ 12
 SDA
+Wire Wire Line
+	4150 2900 3700 2900
+Wire Wire Line
+	4150 3000 3700 3000
 $EndSCHEMATC
