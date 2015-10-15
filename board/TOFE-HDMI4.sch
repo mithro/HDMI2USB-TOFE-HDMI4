@@ -31,13 +31,13 @@ LIBS:contrib
 LIBS:valves
 LIBS:TOFE
 LIBS:EEPROM
-LIBS:TOFE-Expansion-Board-cache
+LIBS:TOFE-HDMI4-cache
 EELAYER 27 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
-Title "TOFE Expansion Board"
+Title "TOFE HDMI4 Expansion Board"
 Date "14 oct 2015"
 Rev "1.0"
 Comp "Numato Lab"
