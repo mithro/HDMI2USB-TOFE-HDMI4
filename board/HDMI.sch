@@ -29,16 +29,15 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:hdmi2usb
-LIBS:timvideos-pcie-8x
-LIBS:HDMI2USB-cache
+LIBS:HDMI
+LIBS:HDMI-cache
 EELAYER 27 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 7 12
+Sheet 1 1
 Title "HDMI2USB"
-Date "26 aug 2015"
+Date "15 oct 2015"
 Rev "Rev2"
 Comp ""
 Comment1 ""
@@ -47,10 +46,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L HDMI J4
+L HDMI J1
 U 1 1 51D80ADD
 P 7950 2750
-F 0 "J4" H 7650 3800 60  0000 C CNN
+F 0 "J1" H 7650 3800 60  0000 C CNN
 F 1 "HDMI" V 8100 2750 60  0000 C CNN
 F 2 "HDMI_TH" H 7900 2750 60  0001 C CNN
 F 3 "~" H 7900 2750 60  0000 C CNN
@@ -71,7 +70,7 @@ F 4 "Yes" H 3450 2550 60  0001 C CNN "Populate"
 	1    0    0    -1  
 $EndComp
 Text Notes 7650 1600 0    60   ~ 0
-HDMI P1
+HDMI H1
 Text Label 7250 4100 2    60   ~ 0
 GND
 Text Label 3300 3750 0    60   ~ 0
@@ -93,37 +92,37 @@ $EndComp
 Text Label 4300 1350 0    60   ~ 0
 GND
 Text Label 4900 2200 2    60   ~ 0
-P1-D2-
+H1-D2-
 Text Label 4900 2500 2    60   ~ 0
-P1-D1-
+H1-D1-
 Text Label 4900 2800 2    60   ~ 0
-P1-D0-
+H1-D0-
 Text Label 4950 3100 2    60   ~ 0
-P1-CLK-
+H1-CLK-
 Text Label 1950 2000 0    60   ~ 0
-P1-D2+
+H1-D2+
 Text Label 1950 2300 0    60   ~ 0
-P1-D1+
+H1-D1+
 Text Label 1950 2600 0    60   ~ 0
-P1-D0+
+H1-D0+
 Text Label 1950 2900 0    60   ~ 0
-P1-CLK+
+H1-CLK+
 Text Label 6850 2050 0    60   ~ 0
-P1-D2-
+H1-D2-
 Text Label 6850 2350 0    60   ~ 0
-P1-D1-
+H1-D1-
 Text Label 6850 2650 0    60   ~ 0
-P1-D0-
+H1-D0-
 Text Label 6850 2950 0    60   ~ 0
-P1-CLK-
+H1-CLK-
 Text Label 6850 1850 0    60   ~ 0
-P1-D2+
+H1-D2+
 Text Label 6850 2150 0    60   ~ 0
-P1-D1+
+H1-D1+
 Text Label 6850 2450 0    60   ~ 0
-P1-D0+
+H1-D0+
 Text Label 6850 2750 0    60   ~ 0
-P1-CLK+
+H1-CLK+
 Text HLabel 1400 2000 0    60   BiDi ~ 0
 TMDS_RX1_2_P
 Text HLabel 1400 2300 0    60   BiDi ~ 0
@@ -170,7 +169,7 @@ F 4 "Yes" H 3200 5900 60  0001 C CNN "Populate"
 	1    0    0    -1  
 $EndComp
 Text Notes 7650 4850 0    60   ~ 0
-HDMI P2
+HDMI H3
 Text Label 7050 7150 2    60   ~ 0
 GND
 Text Label 3050 7100 0    60   ~ 0
@@ -192,37 +191,37 @@ $EndComp
 Text Label 4950 5150 2    60   ~ 0
 GND
 Text Label 4650 5550 2    60   ~ 0
-P2-D2-
+H3-D2-
 Text Label 4650 5850 2    60   ~ 0
-P2-D1-
+H3-D1-
 Text Label 4650 6150 2    60   ~ 0
-P2-D0-
+H3-D0-
 Text Label 4700 6450 2    60   ~ 0
-P2-CLK-
+H3-CLK-
 Text Label 1650 5350 0    60   ~ 0
-P2-D2+
+H3-D2+
 Text Label 1650 5650 0    60   ~ 0
-P2-D1+
+H3-D1+
 Text Label 1650 5950 0    60   ~ 0
-P2-D0+
+H3-D0+
 Text Label 1650 6250 0    60   ~ 0
-P2-CLK+
+H3-CLK+
 Text Label 6600 5300 0    60   ~ 0
-P2-D2-
+H3-D2-
 Text Label 6600 5600 0    60   ~ 0
-P2-D1-
+H3-D1-
 Text Label 6600 5900 0    60   ~ 0
-P2-D0-
+H3-D0-
 Text Label 6600 6200 0    60   ~ 0
-P2-CLK-
+H3-CLK-
 Text Label 6600 5100 0    60   ~ 0
-P2-D2+
+H3-D2+
 Text Label 6600 5400 0    60   ~ 0
-P2-D1+
+H3-D1+
 Text Label 6600 5700 0    60   ~ 0
-P2-D0+
+H3-D0+
 Text Label 6600 6000 0    60   ~ 0
-P2-CLK+
+H3-CLK+
 Text HLabel 1350 5350 0    60   BiDi ~ 0
 TMDS_TX1_2_P
 Text HLabel 1350 5650 0    60   BiDi ~ 0
@@ -241,10 +240,10 @@ Text HLabel 4750 6350 2    60   BiDi ~ 0
 TMDS_TX1_CLK_N
 NoConn ~ 7150 6400
 $Comp
-L HDMI J2
+L HDMI J4
 U 1 1 51DA6684
 P 7600 9150
-F 0 "J2" H 7300 10200 60  0000 C CNN
+F 0 "J4" H 7300 10200 60  0000 C CNN
 F 1 "HDMI" V 7750 9150 60  0000 C CNN
 F 2 "HDMI_TH" H 7550 9150 60  0001 C CNN
 F 3 "~" H 7550 9150 60  0000 C CNN
@@ -253,7 +252,7 @@ F 4 "Yes" H 7550 9150 60  0001 C CNN "Populate"
 	1    0    0    -1  
 $EndComp
 Text Notes 7550 8000 0    60   ~ 0
-HDMI P4
+HDMI H4
 Text Label 3050 10300 0    60   ~ 0
 GND
 Text Label 2000 8350 0    60   ~ 0
@@ -273,37 +272,37 @@ $EndComp
 Text Label 4950 8350 2    60   ~ 0
 GND
 Text Label 4650 8750 2    60   ~ 0
-P4-D2-
+H4-D2-
 Text Label 4650 9050 2    60   ~ 0
-P4-D1-
+H4-D1-
 Text Label 4650 9350 2    60   ~ 0
-P4-D0-
+H4-D0-
 Text Label 4700 9650 2    60   ~ 0
-P4-CLK-
+H4-CLK-
 Text Label 1650 8550 0    60   ~ 0
-P4-D2+
+H4-D2+
 Text Label 1650 8850 0    60   ~ 0
-P4-D1+
+H4-D1+
 Text Label 1650 9150 0    60   ~ 0
-P4-D0+
+H4-D0+
 Text Label 1650 9450 0    60   ~ 0
-P4-CLK+
+H4-CLK+
 Text Label 6500 8450 0    60   ~ 0
-P4-D2-
+H4-D2-
 Text Label 6500 8750 0    60   ~ 0
-P4-D1-
+H4-D1-
 Text Label 6500 9050 0    60   ~ 0
-P4-D0-
+H4-D0-
 Text Label 6500 9350 0    60   ~ 0
-P4-CLK-
+H4-CLK-
 Text Label 6500 8250 0    60   ~ 0
-P4-D2+
+H4-D2+
 Text Label 6500 8550 0    60   ~ 0
-P4-D1+
+H4-D1+
 Text Label 6500 8850 0    60   ~ 0
-P4-D0+
+H4-D0+
 Text Label 6500 9150 0    60   ~ 0
-P4-CLK+
+H4-CLK+
 Text HLabel 1550 8550 0    60   BiDi ~ 0
 TMDS_TX2_2_P
 Text HLabel 1550 8850 0    60   BiDi ~ 0
@@ -372,10 +371,10 @@ $EndComp
 Text Label 2100 10950 2    60   ~ 0
 VCC3V3
 $Comp
-L HDMI J5
+L HDMI J2
 U 1 1 51DA672D
 P 15500 2700
-F 0 "J5" H 15200 3750 60  0000 C CNN
+F 0 "J2" H 15200 3750 60  0000 C CNN
 F 1 "HDMI" V 15650 2700 60  0000 C CNN
 F 2 "HDMI_TH" H 15450 2700 60  0001 C CNN
 F 3 "~" H 15450 2700 60  0000 C CNN
@@ -396,7 +395,7 @@ F 4 "Yes" H 11200 2500 60  0001 C CNN "Populate"
 	1    0    0    -1  
 $EndComp
 Text Notes 15300 1550 0    60   ~ 0
-HDMI P3
+HDMI H2
 Text Label 14800 4100 2    60   ~ 0
 GND
 Text Label 11050 3700 0    60   ~ 0
@@ -418,37 +417,37 @@ $EndComp
 Text Label 12100 1250 0    60   ~ 0
 GND
 Text Label 12650 2150 2    60   ~ 0
-P3-D2-
+H2-D2-
 Text Label 12650 2450 2    60   ~ 0
-P3-D1-
+H2-D1-
 Text Label 12650 2750 2    60   ~ 0
-P3-D0-
+H2-D0-
 Text Label 12700 3050 2    60   ~ 0
-P3-CLK-
+H2-CLK-
 Text Label 9700 1950 0    60   ~ 0
-P3-D2+
+H2-D2+
 Text Label 9700 2250 0    60   ~ 0
-P3-D1+
+H2-D1+
 Text Label 9700 2550 0    60   ~ 0
-P3-D0+
+H2-D0+
 Text Label 9700 2850 0    60   ~ 0
-P3-CLK+
+H2-CLK+
 Text Label 14400 2000 0    60   ~ 0
-P3-D2-
+H2-D2-
 Text Label 14400 2300 0    60   ~ 0
-P3-D1-
+H2-D1-
 Text Label 14400 2600 0    60   ~ 0
-P3-D0-
+H2-D0-
 Text Label 14400 2900 0    60   ~ 0
-P3-CLK-
+H2-CLK-
 Text Label 14400 1800 0    60   ~ 0
-P3-D2+
+H2-D2+
 Text Label 14400 2100 0    60   ~ 0
-P3-D1+
+H2-D1+
 Text Label 14400 2400 0    60   ~ 0
-P3-D0+
+H2-D0+
 Text Label 14400 2700 0    60   ~ 0
-P3-CLK+
+H2-CLK+
 Text GLabel 15050 3900 2    60   Input ~ 0
 VSS
 Text HLabel 9050 1950 0    60   BiDi ~ 0
@@ -715,65 +714,65 @@ $EndComp
 Text Label 13150 4250 2    60   ~ 0
 VCC3V3
 Text Label 5450 6550 2    60   ~ 0
-P2-CEC
+H3-CEC
 Text Label 5450 6650 2    60   ~ 0
-P2-SCL
+H3-SCL
 Text Label 5450 6750 2    60   ~ 0
-P2-SDA
+H3-SDA
 Text Label 5450 6850 2    60   ~ 0
-P2-HOT
+H3-HOT
 Text Label 6600 6300 0    60   ~ 0
-P2-CEC
+H3-CEC
 Text Label 6600 6500 0    60   ~ 0
-P2-SCL
+H3-SCL
 Text Label 6600 6600 0    60   ~ 0
-P2-SDA
+H3-SDA
 Text Label 6600 6900 0    60   ~ 0
-P2-HOT
+H3-HOT
 Text Label 5650 3200 2    60   ~ 0
-P1-CEC
+H1-CEC
 Text Label 5300 9750 2    60   ~ 0
-P4-CEC
+H4-CEC
 Text Label 13450 3150 2    60   ~ 0
-P3-CEC
+H2-CEC
 Text Label 5650 3300 2    60   ~ 0
-P1-SCL
+H1-SCL
 Text Label 5650 3400 2    60   ~ 0
-P1-SDA
+H1-SDA
 Text Label 5650 3500 2    60   ~ 0
-P1-HOT
+H1-HOT
 Text Label 13450 3250 2    60   ~ 0
-P3-SCL
+H2-SCL
 Text Label 13450 3350 2    60   ~ 0
-P3-SDA
+H2-SDA
 Text Label 13450 3450 2    60   ~ 0
-P3-HOT
+H2-HOT
 Text Label 5300 9850 2    60   ~ 0
-P4-SCL
+H4-SCL
 Text Label 5300 9950 2    60   ~ 0
-P4-SDA
+H4-SDA
 Text Label 5300 10050 2    60   ~ 0
-P4-HOT
+H4-HOT
 Text Label 6850 3250 0    60   ~ 0
-P1-SCL
+H1-SCL
 Text Label 6850 3350 0    60   ~ 0
-P1-SDA
+H1-SDA
 Text Label 6350 3650 0    60   ~ 0
-P1-HOT
+H1-HOT
 Text Label 14400 3200 0    60   ~ 0
-P3-SCL
+H2-SCL
 Text Label 14400 3300 0    60   ~ 0
-P3-SDA
+H2-SDA
 Text Label 13900 3600 0    60   ~ 0
-P3-HOT
+H2-HOT
 Text Label 6500 9450 0    60   ~ 0
-P4-CEC
+H4-CEC
 Text Label 6500 9650 0    60   ~ 0
-P4-SCL
+H4-SCL
 Text Label 6500 9750 0    60   ~ 0
-P4-SDA
+H4-SDA
 Text Label 6500 10050 0    60   ~ 0
-P4-HOT
+H4-HOT
 Text HLabel 1400 9750 0    60   BiDi ~ 0
 TMDS_TX2_CEC
 Text HLabel 1550 3200 0    60   BiDi ~ 0
@@ -1043,9 +1042,9 @@ VCC3V3
 Text GLabel 4250 3900 0    39   Input ~ 0
 GND
 Text Label 6850 3050 0    60   ~ 0
-P1-CEC
+H1-CEC
 Text Notes 550  600  0    39   ~ 0
-HDMI IN 1
+HDMI 1
 $Comp
 L IP4776CZ38 U14
 U 1 1 51DA668A
@@ -1058,8 +1057,6 @@ F 4 "Yes" H 3200 9100 60  0001 C CNN "Populate"
 	1    3200 9100
 	1    0    0    -1  
 $EndComp
-Text Label 8700 9500 0    39   ~ 0
-VCC12V0
 $Comp
 L C C172
 U 1 1 5348E12E
@@ -1108,136 +1105,26 @@ F 4 "Yes" H 14300 3900 60  0001 C CNN "Populate"
 	1    14300 3900
 	-1   0    0    1   
 $EndComp
-$Comp
-L ΜA78L00 U16
-U 1 1 5349FDAE
-P 9700 9500
-F 0 "U16" H 10000 9200 60  0000 C CNN
-F 1 "ΜA78L00" H 9550 9750 60  0000 C CNN
-F 2 "μA78L00" H 9700 9500 60  0001 C CNN
-F 3 "" H 9700 9500 60  0000 C CNN
-F 4 "Yes" H 9700 9500 60  0001 C CNN "Populate"
-	1    9700 9500
-	1    0    0    -1  
-$EndComp
-Text Label 10800 9500 2    39   ~ 0
-HDMI-TX1-VCC5V0
-$Comp
-L C C173
-U 1 1 534A0233
-P 8950 9800
-F 0 "C173" H 8950 9900 40  0000 L CNN
-F 1 "0.33mfd" H 8956 9715 40  0000 L CNN
-F 2 "SM0603" H 8988 9650 30  0001 C CNN
-F 3 "~" H 8950 9800 60  0000 C CNN
-F 4 "Yes" H 8950 9800 60  0001 C CNN "Populate"
-	1    8950 9800
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C175
-U 1 1 534A08F9
-P 10400 9900
-F 0 "C175" H 10400 10000 40  0000 L CNN
-F 1 "0.1mfd" H 10406 9815 40  0000 L CNN
-F 2 "SM0603" H 10438 9750 30  0001 C CNN
-F 3 "~" H 10400 9900 60  0000 C CNN
-F 4 "Yes" H 10400 9900 60  0001 C CNN "Populate"
-	1    10400 9900
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R195
-U 1 1 534A0FD7
-P 10700 9900
-F 0 "R195" V 10750 9700 40  0000 C CNN
-F 1 "100K" V 10707 9901 40  0000 C CNN
-F 2 "SM0603" V 10630 9900 30  0001 C CNN
-F 3 "~" H 10700 9900 30  0000 C CNN
-F 4 "Yes" H 10700 9900 30  0001 C CNN "Populate"
-	1    10700 9900
-	1    0    0    -1  
-$EndComp
-Text Label 11300 9500 0    39   ~ 0
-VCC12V0
-$Comp
-L ΜA78L00 U22
-U 1 1 534A58E8
-P 12300 9500
-F 0 "U22" H 12600 9200 60  0000 C CNN
-F 1 "ΜA78L00" H 12150 9750 60  0000 C CNN
-F 2 "μA78L00" H 12300 9500 60  0001 C CNN
-F 3 "" H 12300 9500 60  0000 C CNN
-F 4 "Yes" H 12300 9500 60  0001 C CNN "Populate"
-	1    12300 9500
-	1    0    0    -1  
-$EndComp
-Text Label 13400 9500 2    39   ~ 0
-HDMI-TX2-VCC5V0
-$Comp
-L C C177
-U 1 1 534A58F1
-P 11550 9800
-F 0 "C177" H 11550 9900 40  0000 L CNN
-F 1 "0.33mfd" H 11556 9715 40  0000 L CNN
-F 2 "SM0603" H 11588 9650 30  0001 C CNN
-F 3 "~" H 11550 9800 60  0000 C CNN
-F 4 "Yes" H 11550 9800 60  0001 C CNN "Populate"
-	1    11550 9800
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C181
-U 1 1 534A58FE
-P 13000 9900
-F 0 "C181" H 13000 10000 40  0000 L CNN
-F 1 "0.1mfd" H 13006 9815 40  0000 L CNN
-F 2 "SM0603" H 13038 9750 30  0001 C CNN
-F 3 "~" H 13000 9900 60  0000 C CNN
-F 4 "Yes" H 13000 9900 60  0001 C CNN "Populate"
-	1    13000 9900
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R202
-U 1 1 534A5906
-P 13300 9900
-F 0 "R202" V 13350 9700 40  0000 C CNN
-F 1 "100K" V 13307 9901 40  0000 C CNN
-F 2 "SM0603" V 13230 9900 30  0001 C CNN
-F 3 "~" H 13300 9900 30  0000 C CNN
-F 4 "Yes" H 13300 9900 30  0001 C CNN "Populate"
-	1    13300 9900
-	1    0    0    -1  
-$EndComp
 Text Label 6100 6800 0    39   ~ 0
 HDMI-TX1-VCC5V0
 Text Label 6000 9950 0    39   ~ 0
 HDMI-TX2-VCC5V0
-Text Notes 550  4750 0    39   ~ 0
-HDMI OUT 1
+Text Notes 600  4750 0    39   ~ 0
+HDMI 3
 Text Label 6350 3550 0    60   ~ 0
 GND
 Text Label 13900 3500 0    60   ~ 0
 GND
-Text Notes 8700 9100 0    39   ~ 0
-LDO OUT FOR
-Text Notes 11000 9100 0    39   ~ 0
-LDO OUT FOR
 Text Notes 6100 6750 0    39   ~ 0
 LDO OUT FOR TX1
 Text Notes 6000 9900 0    39   ~ 0
 LDO OUT FOR TX2
 Text Notes 600  7950 0    39   ~ 0
-HDMI OUT 2
+HDMI 4
 Text Notes 8300 600  0    39   ~ 0
-HDMI IN 2
-Text Notes 11450 9100 0    39   ~ 0
-HDMI OUT 2
-Text Notes 9150 9100 0    39   ~ 0
-HDMI OUT 1
+HDMI 2
 Text Label 14400 3000 0    60   ~ 0
-P3-CEC
+H2-CEC
 $Comp
 L R R84
 U 1 1 54A1B0EE
@@ -1299,10 +1186,10 @@ F 4 "Yes" H 9350 3300 60  0001 C CNN "Populate"
 	-1   0    0    1   
 $EndComp
 $Comp
-L CONN_1 P10
+L CONN_1 H10
 U 1 1 54A1D216
 P 9350 3200
-F 0 "P10" H 9430 3200 40  0000 L CNN
+F 0 "H10" H 9430 3200 40  0000 L CNN
 F 1 "CONN_1" H 9350 3255 30  0001 C CNN
 F 2 "1Pin_N" H 9350 3200 60  0001 C CNN
 F 3 "" H 9350 3200 60  0000 C CNN
@@ -1335,10 +1222,10 @@ F 4 "Yes" H 1950 6600 60  0001 C CNN "Populate"
 	-1   0    0    1   
 $EndComp
 $Comp
-L CONN_1 P2
+L CONN_1 H3
 U 1 1 54A1DB10
 P 1950 9900
-F 0 "P2" H 2030 9900 40  0000 L CNN
+F 0 "H3" H 2030 9900 40  0000 L CNN
 F 1 "CONN_1" H 1950 9955 30  0001 C CNN
 F 2 "1Pin_N" H 1950 9900 60  0001 C CNN
 F 3 "" H 1950 9900 60  0000 C CNN
@@ -1347,10 +1234,10 @@ F 4 "Yes" H 1950 9900 60  0001 C CNN "Populate"
 	-1   0    0    1   
 $EndComp
 $Comp
-L CONN_1 P4
+L CONN_1 H4
 U 1 1 54A1DB16
 P 1950 9800
-F 0 "P4" H 2030 9800 40  0000 L CNN
+F 0 "H4" H 2030 9800 40  0000 L CNN
 F 1 "CONN_1" H 1950 9855 30  0001 C CNN
 F 2 "1Pin_N" H 1950 9800 60  0001 C CNN
 F 3 "" H 1950 9800 60  0000 C CNN
@@ -1359,95 +1246,69 @@ F 4 "Yes" H 1950 9800 60  0001 C CNN "Populate"
 	-1   0    0    1   
 $EndComp
 Text Label 4650 8550 2    60   ~ 0
-P4-D2+
+H4-D2+
 Text Label 1650 8750 0    60   ~ 0
-P4-D2-
+H4-D2-
 Text Label 4650 8850 2    60   ~ 0
-P4-D1+
+H4-D1+
 Text Label 1650 9050 0    60   ~ 0
-P4-D1-
+H4-D1-
 Text Label 4650 9150 2    60   ~ 0
-P4-D0+
+H4-D0+
 Text Label 1650 9350 0    60   ~ 0
-P4-D0-
+H4-D0-
 Text Label 4700 9450 2    60   ~ 0
-P4-CLK+
+H4-CLK+
 Text Label 1650 9650 0    60   ~ 0
-P4-CLK-
+H4-CLK-
 Text Label 1650 6450 0    60   ~ 0
-P2-CLK-
+H3-CLK-
 Text Label 4700 6250 2    60   ~ 0
-P2-CLK+
+H3-CLK+
 Text Label 1650 6150 0    60   ~ 0
-P2-D0-
+H3-D0-
 Text Label 4650 5950 2    60   ~ 0
-P2-D0+
+H3-D0+
 Text Label 1650 5850 0    60   ~ 0
-P2-D1-
+H3-D1-
 Text Label 4650 5650 2    60   ~ 0
-P2-D1+
+H3-D1+
 Text Label 1650 5550 0    60   ~ 0
-P2-D2-
+H3-D2-
 Text Label 4650 5350 2    60   ~ 0
-P2-D2+
+H3-D2+
 Text Label 1950 3100 0    60   ~ 0
-P1-CLK-
+H1-CLK-
 Text Label 4950 2900 2    60   ~ 0
-P1-CLK+
+H1-CLK+
 Text Label 1950 2800 0    60   ~ 0
-P1-D0-
+H1-D0-
 Text Label 4900 2600 2    60   ~ 0
-P1-D0+
+H1-D0+
 Text Label 1950 2500 0    60   ~ 0
-P1-D1-
+H1-D1-
 Text Label 4900 2300 2    60   ~ 0
-P1-D1+
+H1-D1+
 Text Label 1950 2200 0    60   ~ 0
-P1-D2-
+H1-D2-
 Text Label 4900 2000 2    60   ~ 0
-P1-D2+
+H1-D2+
 Text Label 9700 3050 0    60   ~ 0
-P3-CLK-
+H2-CLK-
 Text Label 9700 2750 0    60   ~ 0
-P3-D0-
+H2-D0-
 Text Label 12650 2550 2    60   ~ 0
-P3-D0+
+H2-D0+
 Text Label 9700 2450 0    60   ~ 0
-P3-D1-
+H2-D1-
 Text Label 12650 2250 2    60   ~ 0
-P3-D1+
+H2-D1+
 Text Label 9700 2150 0    60   ~ 0
-P3-D2-
+H2-D2-
 Text Label 12650 1950 2    60   ~ 0
-P3-D2+
+H2-D2+
 Text Label 12700 2850 2    60   ~ 0
-P3-CLK+
-Text GLabel 8700 9500 0    39   Input ~ 0
-VCC12V0
-$Comp
-L C C205
-U 1 1 551E065D
-P 10200 9900
-F 0 "C205" H 10200 10000 40  0000 L CNN
-F 1 "0.1mfd" H 10206 9815 40  0000 L CNN
-F 2 "SM0603" H 10238 9750 30  0001 C CNN
-F 3 "~" H 10200 9900 60  0000 C CNN
-F 4 "Yes" H 10200 9900 60  0001 C CNN "Populate"
-	1    10200 9900
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C252
-U 1 1 551E0D44
-P 12750 9900
-F 0 "C252" H 12750 10000 40  0000 L CNN
-F 1 "0.1mfd" H 12756 9815 40  0000 L CNN
-F 2 "SM0603" H 12788 9750 30  0001 C CNN
-F 3 "~" H 12750 9900 60  0000 C CNN
-F 4 "Yes" H 12750 9900 60  0001 C CNN "Populate"
-	1    12750 9900
-	1    0    0    -1  
-$EndComp
+H2-CLK+
 Text Label 8700 7700 0    39   ~ 0
 VCC12V0
 $Comp
@@ -1549,10 +1410,10 @@ F 4 "Yes" H 1800 3450 60  0001 C CNN "Populate"
 	-1   0    0    1   
 $EndComp
 $Comp
-L CONN_1 P19
+L CONN_1 H19
 U 1 1 55DE3164
 P 1800 3150
-F 0 "P19" H 1880 3150 40  0000 L CNN
+F 0 "H19" H 1880 3150 40  0000 L CNN
 F 1 "CONN_1" H 1800 3205 30  0001 C CNN
 F 2 "1Pin_N" H 1800 3150 60  0001 C CNN
 F 3 "" H 1800 3150 60  0000 C CNN
@@ -1683,26 +1544,6 @@ Wire Wire Line
 	10350 7700 10800 7700
 Wire Wire Line
 	8700 7700 9050 7700
-Connection ~ 12750 10300
-Wire Wire Line
-	12750 10300 12750 10100
-Connection ~ 13000 9600
-Wire Wire Line
-	12750 9600 13000 9600
-Wire Wire Line
-	12750 9700 12750 9600
-Connection ~ 10200 10300
-Wire Wire Line
-	10200 10300 10200 10100
-Connection ~ 10400 9600
-Wire Wire Line
-	10200 9600 10400 9600
-Wire Wire Line
-	10200 9700 10200 9600
-Wire Notes Line
-	8300 10500 8700 10500
-Wire Notes Line
-	8300 9000 8300 10500
 Wire Wire Line
 	12700 2850 12150 2850
 Wire Wire Line
@@ -1844,14 +1685,6 @@ Wire Notes Line
 Wire Notes Line
 	550  7850 8100 7850
 Wire Notes Line
-	12000 9100 12000 9000
-Wire Notes Line
-	10900 9100 12000 9100
-Wire Notes Line
-	9900 9100 9900 9000
-Wire Notes Line
-	8300 9100 9900 9100
-Wire Notes Line
 	500  650  1100 650 
 Wire Notes Line
 	900  4800 550  4800
@@ -1871,66 +1704,6 @@ Wire Notes Line
 	500  4500 15850 4500
 Wire Notes Line
 	500  500  15850 500 
-Wire Notes Line
-	10900 10500 10950 10500
-Wire Notes Line
-	10900 9000 10900 10500
-Wire Notes Line
-	13550 10500 8650 10500
-Wire Notes Line
-	13550 9000 13550 10500
-Wire Notes Line
-	8300 9000 13550 9000
-Connection ~ 13000 10300
-Wire Wire Line
-	13300 10300 13300 10150
-Connection ~ 13300 9500
-Wire Wire Line
-	13300 9500 13300 9650
-Connection ~ 13000 9500
-Wire Wire Line
-	13000 9500 13000 9700
-Connection ~ 12300 10300
-Wire Wire Line
-	13000 10300 13000 10100
-Wire Wire Line
-	11550 10300 11550 10000
-Wire Wire Line
-	11550 10300 13300 10300
-Wire Wire Line
-	12300 10050 12300 10400
-Connection ~ 11550 9500
-Wire Wire Line
-	11550 9600 11550 9500
-Wire Wire Line
-	12950 9500 13400 9500
-Wire Wire Line
-	11300 9500 11650 9500
-Connection ~ 10400 10300
-Wire Wire Line
-	10700 10300 10700 10150
-Connection ~ 10700 9500
-Wire Wire Line
-	10700 9500 10700 9650
-Connection ~ 10400 9500
-Wire Wire Line
-	10400 9500 10400 9700
-Connection ~ 9700 10300
-Wire Wire Line
-	10400 10300 10400 10100
-Wire Wire Line
-	8950 10300 8950 10000
-Wire Wire Line
-	8950 10300 10700 10300
-Wire Wire Line
-	9700 10050 9700 10400
-Connection ~ 8950 9500
-Wire Wire Line
-	8950 9600 8950 9500
-Wire Wire Line
-	10350 9500 10800 9500
-Wire Wire Line
-	8700 9500 9050 9500
 Wire Wire Line
 	14150 4200 13750 4200
 Connection ~ 14850 3900
@@ -2676,28 +2449,6 @@ Wire Wire Line
 	2100 10000 2100 10050
 Connection ~ 2100 10050
 $Comp
-L GND #PWR055
-U 1 1 55DE9031
-P 9700 10400
-F 0 "#PWR055" H 9700 10400 30  0001 C CNN
-F 1 "GND" H 9700 10330 30  0001 C CNN
-F 2 "" H 9700 10400 60  0000 C CNN
-F 3 "" H 9700 10400 60  0000 C CNN
-	1    9700 10400
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR056
-U 1 1 55DE903E
-P 12300 10400
-F 0 "#PWR056" H 12300 10400 30  0001 C CNN
-F 1 "GND" H 12300 10330 30  0001 C CNN
-F 2 "" H 12300 10400 60  0000 C CNN
-F 3 "" H 12300 10400 60  0000 C CNN
-	1    12300 10400
-	1    0    0    -1  
-$EndComp
-$Comp
 L GND #PWR057
 U 1 1 55DE9832
 P 9700 8600
@@ -2708,13 +2459,7 @@ F 3 "" H 9700 8600 60  0000 C CNN
 	1    9700 8600
 	1    0    0    -1  
 $EndComp
-Text GLabel 11300 9500 0    39   Input ~ 0
-VCC12V0
 Text Label 9150 8500 2    60   ~ 0
-GND
-Text Label 9150 10300 2    60   ~ 0
-GND
-Text Label 11750 10300 2    60   ~ 0
 GND
 $Comp
 L GND #PWR058
